@@ -245,14 +245,8 @@ The dataset contains **100,000 retail transactions** spanning four product categ
 
 ---
 
-## 👤 Author
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/<your-username>)
-
----
-
 <div align="center">
 
-⭐ **If you found this project useful, consider giving it a star!** ⭐
+⭐ **Thanks for checking it out!** ⭐
 
 </div>
