@@ -1,0 +1,58 @@
+<!-- 
+ Name : Pay Yu mi
+Class: DIT/1B/07
+Admin No: 2537159
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Transaction Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-chart-line"></i> Retail Transaction Dashboard</h1>
+        </header>
+        
+        <main class="dashboard">
+            <div class="welcome-section">
+                <h2>Welcome</h2>
+                <p>Select an option below to explore retail transaction data. This dashboard allows you to view transaction details or analyze transactions by payment type.</p>
+            </div>
+            
+            <div class="card-container">
+                <div class="card" id="transaction-data-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Retail Transaction Data</h3>
+                    <p>View detailed transaction information.</p>
+                    <a href="./retailTransaction.html" class="card-link" id="view-transaction-data">
+                        View Transaction Data <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="card" id="payment-type-card">
+                    <div class="card-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Retail Transaction by Payment Type</h3>
+                    <p>View transactions broken down by payment methods.</p>
+                    <a href="./paymentMethod.html" class="card-link" id="view-payment-type">
+                        View by Payment Type <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p> 2026 FOP2 Assignment 2</p>
+        </footer>
+    </div>
+</body>
+</html>

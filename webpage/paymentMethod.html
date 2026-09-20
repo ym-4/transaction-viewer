@@ -1,0 +1,38 @@
+<!-- 
+ Name : Pay Yu mi
+Class: DIT/1B/07
+Admin No: 2537159
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Transaction by Payment Type</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+        
+        <header>
+            <h2>Retail Transaction by Payment Type</h2>
+            <p class="subtitle">Top 5 transactions sorted by Total Amount</p>
+        </header>
+        
+        <div class="summary">
+            <h3>Overview</h3>
+            <p>Select a payment method below to view the top 5 highest transactions for that payment type.</p>
+        </div>
+
+        <!-- payment web componnent -->
+        <payment-method></payment-method>
+    </div>
+    
+    <!--JavaScript files -->
+    <script src="./js/retailInfo.js" type="module"></script>
+    <script src="./js/paymentInfo.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

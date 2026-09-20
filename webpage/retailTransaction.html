@@ -1,0 +1,48 @@
+<!-- 
+ Name : Pay Yu mi
+Class: DIT/1B/07
+Admin No: 2537159
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Transaction Data</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Dashboard</a>
+        
+        <header>
+            <h1>Retail Transaction Data</h1>
+            <p class="subtitle">First 5 records sorted by Customer ID </p>
+        </header>
+        
+        <div class="summary">
+            <h3>Overview</h3>
+            <p>Displaying the first 5 transactions sorted by Customer ID from the retail transaction dataset.</p>
+        </div>
+        
+        <div class="data-container">
+            <div class="loading" id="loading">
+                <p>Loading transaction data...</p>
+            </div>
+            
+            <div id="transaction-table-container"></div>
+
+            <!-- data -->
+            <div id="retailTransactionData"></div>
+
+            <div id="info"></div>
+           
+        </div>
+    </div>
+    
+    <!--JavaScript files -->
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/retailInfo.js" type="module"></script>
+</body>
+</html>
