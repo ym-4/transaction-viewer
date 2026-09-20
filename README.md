@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛒 Retail Transaction Dashboard
+# Retail Transaction Dashboard 🛒
 
 ### A full-stack data explorer for 100,000 retail transactions, built with Node.js, Express and native Web Components.
 
@@ -31,17 +31,15 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 **Retail Transaction Dashboard** is a full-stack web application that loads a **100,000-row retail dataset** into memory on server start-up, indexes it for fast lookups, and serves it through a lightweight REST API. The front end consumes that API and renders results as reusable **custom HTML elements** built with the Web Components standard, with no front-end framework required.
 
 Users can browse a sample of transactions, or drill into the **top 5 highest-value transactions** for each payment method.
 
-> 💡 **Why it's interesting:** the CSV is parsed once as a stream, then pre-grouped into `Map` structures keyed by URL-friendly slugs. Every filter request becomes an **O(1) lookup** instead of a scan over 100k rows.
-
 ---
 
-## ✨ Features
+## Features
 
 | | Feature | Description |
 |---|---|---|
@@ -56,7 +54,7 @@ Users can browse a sample of transactions, or drill into the **top 5 highest-val
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 <div align="center">
 
@@ -73,7 +71,7 @@ Users can browse a sample of transactions, or drill into the **top 5 highest-val
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```mermaid
 flowchart LR
@@ -97,7 +95,7 @@ flowchart LR
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -134,7 +132,7 @@ Visit **http://localhost:8081/** and open `index.html`, or navigate directly to:
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 **Base URL:** `http://localhost:8081`
 
@@ -183,7 +181,7 @@ Visit **http://localhost:8081/** and open `index.html`, or navigate directly to:
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 The dataset contains **100,000 retail transactions** spanning four product categories and four payment methods.
 
@@ -202,7 +200,7 @@ The dataset contains **100,000 retail transactions** spanning four product categ
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 .
@@ -224,7 +222,7 @@ The dataset contains **100,000 retail transactions** spanning four product categ
 
 ---
 
-## 🧠 Technical Highlights
+## Technical Highlights
 
 - **Streaming CSV ingestion.** The file is read as a stream instead of loaded into memory in one go.
 - **Slug-based routing.** `toSlug()` normalises names into clean, URL-safe identifiers.
@@ -232,17 +230,7 @@ The dataset contains **100,000 retail transactions** spanning four product categ
 - **Encapsulated components.** Each custom element owns its markup and styles through Shadow DOM, so styles never leak.
 - **Attribute-driven rendering.** `<retail-data>` uses `observedAttributes` and `attributeChangedCallback` to update the DOM reactively.
 - **Modular ES6 code.** Data fetching, components and page logic live in separate modules.
-
----
-
-## 🗺 Roadmap
-
-- [ ] Product category filter page (API endpoints already available)
-- [ ] Pagination and search across all 100k records
-- [ ] Charts for revenue by payment method and category
-- [ ] Date-range filtering
-- [ ] Server-side sorting and top-N queries
-
+  
 ---
 
 <div align="center">
